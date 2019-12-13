@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #488080;
+    color: #333;
+}
+#Contenedor{
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+header{
+    height: 75px;
+    background: #009999;
+    margin-bottom: 10px;
+}
+header h1{
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+}
+#Contenido{
+    width: 900px;
+    height: auto;
+    float: left;
+    background: #D8D511;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#Contenido h1{
+    font-size: 30px;
+    text-align: center;
+}
+#Contenido h2{
+    font-size: 25px;
+    text-align: left;
+}
+#Contenido h3{
+    font-size: 25px;
+    text-align: left;
+}
+#Contenido h4{
+    font-size: 20px;
+    text-align: center;
+}
+#Lista1 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 1em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+#Lista1 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+#Lista1 li:hover{
+    background: #eee;
+}
+
+#Lista1 li:hover:before{
+    transform: rotate(360deg);  
+}
+
+#Lista1 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: inherit; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+footer{
+    background: #009999;
+    clear: both;
+}
+footer div{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
